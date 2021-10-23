@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class LevelzweiButton : MonoBehaviour
+public class Setup : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,10 +14,5 @@ public class LevelzweiButton : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void Click()
-    {
-        SceneManager.LoadScene("Levelzwei");
     }
 }

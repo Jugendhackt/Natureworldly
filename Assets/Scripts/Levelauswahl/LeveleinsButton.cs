@@ -7,8 +7,8 @@ public class LeveleinsButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
-    {
         
+    {
     }
 
     // Update is called once per frame
@@ -19,6 +19,6 @@ public class LeveleinsButton : MonoBehaviour
 
     public void Click()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Hauslevel");
     }
 }
