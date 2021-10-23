@@ -14,10 +14,16 @@ public class EinkaufstueteMeme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-            ui.SetActive(true);
-        if (Input.GetMouseButtonDown(1))
+        if (ui.active && Input.GetMouseButtonDown(1))
+        {
             ui.SetActive(false);
+        }
     }
-    
+   void OnMouseDown()
+    {
+        if (! ui.active)
+        {
+            ui.SetActive(true);
+        }
+    } 
 }
