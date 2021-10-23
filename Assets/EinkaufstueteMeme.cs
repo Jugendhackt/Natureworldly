@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Einkaufstüte : MonoBehaviour
+public class EinkaufstueteMeme : MonoBehaviour
 {
+    public GameObject ui;
     // Start is called before the first frame update
     void Start()
     {
-        public GameObject einkaufstuete;
+        
     }
-    private void OnMouseDown()
-    {
-        if (Input.GetMouseButtonDown(0))
-    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+            ui.SetActive(true);
+        if (Input.GetMouseButtonDown(1))
+            ui.SetActive(false);
     }
+    
 }
