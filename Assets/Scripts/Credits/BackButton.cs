@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelzweiButton : MonoBehaviour
+public class BackButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,9 +16,8 @@ public class LevelzweiButton : MonoBehaviour
     {
         
     }
-
     public void Click()
     {
-        SceneManager.LoadScene("Levelzwei");
+        SceneManager.LoadScene("TitleScreen");
     }
 }

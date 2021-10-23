@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hauslevel.unity
     guid: 5f7703a1027018f4ba645ba2db9ab2a9
+  - enabled: 1
+    path: Assets/Scenes/Userauswahl.unity
+    guid: 077625a4ed2ba47e1b26470f6ce75484
   m_configObjects: {}
