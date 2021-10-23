@@ -18,9 +18,9 @@ public class Zange : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        Debug.Log(Vector3.Distance(player.transform.position, this.transform.position) < 0.5f);
+        Debug.Log(Vector3.Distance(player.transform.position, transform.position) < 0.5f);
         if(Vector3.Distance(player.transform.position, this.transform.position) < 0.5f)
         {
             this.playerobtains = true;
