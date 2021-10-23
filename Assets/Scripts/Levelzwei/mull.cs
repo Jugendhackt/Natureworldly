@@ -11,6 +11,7 @@ public class mull : MonoBehaviour
     public SpriteRenderer spriterenderer;
     public GameObject derMull;
     public GameObject player;
+    public Zange zange;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class mull : MonoBehaviour
     void Update()
     {
         Debug.Log("Hi");
-        if (Random.Range(0, 2000) == 1)
+        if (!(derMull.active) && Random.Range(0, 3000) == 1)
         {
             Debug.Log("hey");
             int randomn = Random.Range(1, 4);
@@ -46,7 +47,7 @@ public class mull : MonoBehaviour
 
 
         var dis = Vector3.Distance(derMull.transform.position, player.transform.position);
-        if(derMull.active && dis < 1.0f)
+        if(derMull.active && dis < 1.0f && zange.playerobtains)
         {
             var reader = QuickSaveReader.Create("Points");
             var points = reader.Read<int>("Points");

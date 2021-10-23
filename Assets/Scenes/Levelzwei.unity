@@ -694,6 +694,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 1043247529}
   derMull: {fileID: 1043247527}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &250837474
 Transform:
   m_ObjectHideFlags: 0
@@ -1078,6 +1079,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 1068977057}
   derMull: {fileID: 1068977055}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &543782593
 Transform:
   m_ObjectHideFlags: 0
@@ -2064,6 +2066,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 856139033}
   derMull: {fileID: 856139032}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &587219082
 Transform:
   m_ObjectHideFlags: 0
@@ -5162,6 +5165,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 802474807}
   derMull: {fileID: 802474805}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &731618867
 Transform:
   m_ObjectHideFlags: 0
@@ -6318,6 +6322,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 948531859}
   derMull: {fileID: 948531857}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &1239629374
 Transform:
   m_ObjectHideFlags: 0
@@ -6941,6 +6946,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 1842287974}
   derMull: {fileID: 1842287972}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &1729094825
 Transform:
   m_ObjectHideFlags: 0
@@ -6991,6 +6997,7 @@ MonoBehaviour:
   spriterenderer: {fileID: 444023204}
   derMull: {fileID: 444023202}
   player: {fileID: 342339426}
+  zange: {fileID: 1364774336}
 --- !u!4 &1798457171
 Transform:
   m_ObjectHideFlags: 0
