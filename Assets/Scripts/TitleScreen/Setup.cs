@@ -22,10 +22,12 @@ public class Setup : MonoBehaviour
                 .Write("Points", 0)
                 .Commit();
             var writer2 = QuickSaveWriter.Create("user");
-            //
+            // Current: Aktueller Charakter, Alpaca: Alpaca mit heller Hautfarbe, Alpaca2: Alpaca mit dunkler Hautfarbe, Alpaca3: Rainbow Alpaca!!!
             writer2
                 .Write("current", 1)
-                .Write("alpaca", 0)
+                .Write("alpaca", 1)
+                .Write("alpaca2", 1)
+                .Write("alpaca3", 0)
                 .Commit();
             var writer1 = QuickSaveWriter.Create("isSetup");
             writer1
