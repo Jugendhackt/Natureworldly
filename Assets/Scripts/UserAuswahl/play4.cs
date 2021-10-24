@@ -17,7 +17,11 @@ public class play4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var reader = QuickSaveReader.Create("user");
+        if (reader.Read<int>("alpaca4") == 1)
+        {
+            this.GetComponent<Image>().sprite = texture2;
+        }
     }
 
     public void Click()

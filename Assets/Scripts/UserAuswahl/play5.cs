@@ -17,7 +17,11 @@ public class play5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var reader = QuickSaveReader.Create("user");
+        if (reader.Read<int>("alpaca5") == 1)
+        {
+            this.GetComponent<Image>().sprite = texture2;
+        }
     }
 
     public void Click()
@@ -34,7 +38,7 @@ public class play5 : MonoBehaviour
                     .Commit();
                 var newwriter = QuickSaveWriter.Create("user");
                 newwriter
-                    .Write("alpaca3", 1)
+                    .Write("alpaca5", 1)
                     .Write("current", 3)
                     .Commit();
             }

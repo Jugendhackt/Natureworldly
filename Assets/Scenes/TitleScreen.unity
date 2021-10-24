@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSetup: 0
+  setPoints: 1000
 --- !u!4 &383171737
 Transform:
   m_ObjectHideFlags: 0
