@@ -21,10 +21,8 @@ public class mull : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Hi");
         if (!(derMull.active) && Random.Range(0, 3000) == 1)
         {
-            Debug.Log("hey");
             int randomn = Random.Range(1, 4);
             if (randomn == 1)
             {

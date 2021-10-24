@@ -28,6 +28,8 @@ public class Setup : MonoBehaviour
                 .Write("alpaca", 1)
                 .Write("alpaca2", 1)
                 .Write("alpaca3", 0)
+                .Write("alpaca4", 0)
+                .Write("alpaca5", 0)
                 .Commit();
             var writer1 = QuickSaveWriter.Create("isSetup");
             writer1

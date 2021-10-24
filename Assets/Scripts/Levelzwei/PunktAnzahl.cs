@@ -17,6 +17,8 @@ public class PunktAnzahl : MonoBehaviour
     {
         var reader = QuickSaveReader.Create("Points");
         var points = reader.Read<int>("Points");
+        Debug.Log(points);
+        Debug.Log(this.GetComponent<Text>());
         this.GetComponent<Text>().text = points.ToString();
     }
 }
