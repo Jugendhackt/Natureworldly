@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public Sprite texture1;
     public Sprite texture2;
     public Sprite texture3;
+    public Sprite texture4;
+    public Sprite texture5;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,14 @@ public class Player : MonoBehaviour
         }else if (current == 3)
         {
             this.GetComponent<SpriteRenderer>().sprite = texture3;
+        }
+        else if (current == 4)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = texture4;
+        }
+        else if (current == 5)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = texture5;
         }
         else
         {

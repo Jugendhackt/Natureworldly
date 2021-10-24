@@ -39,7 +39,7 @@ public class play5 : MonoBehaviour
                 var newwriter = QuickSaveWriter.Create("user");
                 newwriter
                     .Write("alpaca5", 1)
-                    .Write("current", 3)
+                    .Write("current", 5)
                     .Commit();
             }
         }
