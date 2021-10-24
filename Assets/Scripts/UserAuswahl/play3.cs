@@ -38,6 +38,7 @@ public class play3 : MonoBehaviour
                     .Commit();
                 var newwriter = QuickSaveWriter.Create("user");
                 newwriter
+                    .Write("alpaca3", 1)
                     .Write("current", 3)
                     .Commit();
             }
