@@ -7,6 +7,7 @@ public class Setup : MonoBehaviour
 {
 
     public bool isSetup = false;
+    public int setPoints = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Setup : MonoBehaviour
             var nothing = QuickSaveWriter.Create("isSetup");
             var writer = QuickSaveWriter.Create("Points");
             writer
-                .Write("Points", 0)
+                .Write("Points", setPoints)
                 .Commit();
             var writer2 = QuickSaveWriter.Create("user");
             // Current: Aktueller Charakter, Alpaca: Alpaca mit heller Hautfarbe, Alpaca2: Alpaca mit dunkler Hautfarbe, Alpaca3: Rainbow Alpaca!!!
@@ -40,7 +41,7 @@ public class Setup : MonoBehaviour
         {
             var writer = QuickSaveWriter.Create("Points");
             writer
-                .Write("Points", 0)
+                .Write("Points", setPoints)
                 .Commit();
             var writer1 = QuickSaveWriter.Create("isSetup");
             writer1
