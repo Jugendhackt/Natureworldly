@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CI.QuickSave;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class play3 : MonoBehaviour
 {
@@ -25,10 +26,29 @@ public class play3 : MonoBehaviour
 
     public void Click()
     {
-        if(this.GetComponent<Image>().sprite == texture2)
+        if(this.GetComponent<Image>().sprite != texture2)
         {
-            var Points = QuickSaveReader.Create("Points");
-            // HIER CODEN
+            var points = QuickSaveReader.Create("Points");
+            var realpoints = points.Read<int>("Points");
+            if(realpoints > 100)
+            {
+                var writer = QuickSaveWriter.Create("Points");
+                writer
+                    .Write("Points", realpoints - 100)
+                    .Commit();
+                var newwriter = QuickSaveWriter.Create("user");
+                newwriter
+                    .Write("current", 3)
+                    .Commit();
+            }
+        }
+        else
+        {
+            var newwriter = QuickSaveWriter.Create("user");
+            newwriter
+                .Write("current", 3)
+                .Commit();
+            SceneManager.LoadScene("TitleScreen");
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CI.QuickSave;
+using UnityEngine.SceneManagement;
 
 public class play1 : MonoBehaviour
 {
@@ -23,5 +24,6 @@ public class play1 : MonoBehaviour
         writer
             .Write("current", 1)
             .Commit();
+        SceneManager.LoadScene("TitleScreen");
     }
 }
