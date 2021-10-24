@@ -19,6 +19,6 @@ public class AuswahlButton : MonoBehaviour
 
     public void Click()
     {
-        SceneManager.LoadScene("UserAuswahl");
+        SceneManager.LoadScene("UserAuswahl 1");
     }
 }
